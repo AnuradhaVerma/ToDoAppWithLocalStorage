@@ -1,0 +1,169 @@
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto 0;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Stats container styles */
+.stats-container {
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #a1689d;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    background-color: #f4e0ec;
+}
+
+.stats-container:hover {
+    background-color: #e7c5da;
+    border-color: #913a7e;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3d7ca;
+    color: #333;
+}
+
+/* Input styles */
+input[type="text"] {
+    padding: 12px 15px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #913a7e;
+    box-shadow: 0 0 8px rgba(145, 58, 126, 0.2);
+}
+
+/* Button styles */
+button {
+    padding: 12px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Task styles */
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #f08ae2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.task:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.task p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    flex-grow: 1;
+}
+
+/* Delete button styles */
+.dlt {
+    cursor: pointer;
+    padding-left: 15px;
+    transition: transform 0.3s ease;
+}
+
+.dlt svg {
+    fill: #dc3545;
+    transition: fill 0.3s ease;
+}
+
+.dlt:hover svg {
+    fill: #c82333;
+    transform: scale(1.1);
+}
+
+/* Progress container styles */
+.progress-container {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.progress-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #913a7e;
+}
+
+/* Progress bar styles */
+progress {
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #e0e4e8;
+    appearance: none;
+    transition: background-color 0.3s ease;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #e0e4e8;
+}
+
+progress::-webkit-progress-value {
+    background-color: #f08ae2;
+    transition: width 0.3s ease;
+}
+
+progress::-moz-progress-bar {
+    background-color: #f08ae2;
+}
+
